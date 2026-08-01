@@ -1,0 +1,30 @@
+:root {
+  --bg: #0e1116;
+  --panel: #161b22;
+  --panel-2: #1d232c;
+  --line: #2a323d;
+  --line-soft: #20262f;
+  --fg: #e6edf3;
+  --muted: #8b98a8;
+  --accent: #4cc2ff;
+  --chip: #2a323d;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: var(--bg);
+  color: var(--fg);
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    'SF Pro Text',
+    system-ui,
+    sans-serif;
+}

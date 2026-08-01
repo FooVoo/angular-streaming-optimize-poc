@@ -1,0 +1,44 @@
+.shell {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  height: 100vh;
+  padding: 14px 16px;
+  box-sizing: border-box;
+}
+
+header {
+  h1 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 650;
+  }
+
+  p {
+    margin: 4px 0 0;
+    font-size: 13px;
+    color: var(--muted);
+    max-width: 720px;
+  }
+}
+
+main {
+  flex: 1;
+  min-height: 0;
+}
+
+.error {
+  padding: 8px 12px;
+  border-radius: 6px;
+  background: #4a1f1f;
+  border: 1px solid #7a2f2f;
+  font-size: 13px;
+}
+
+.empty {
+  display: grid;
+  place-items: center;
+  height: 100%;
+  color: var(--muted);
+  font-size: 14px;
+}

@@ -1,0 +1,28 @@
+<div class="shell">
+  <header>
+    <h1>Streaming &amp; render cost — {{ rowCount() }} rows</h1>
+    <p>
+      Same table, same renderer, four transports. Cost is split into network /
+      decode / render because that is where the difference actually separates.
+    </p>
+  </header>
+
+  <app-toolbar />
+
+  @if (data.error(); as message) {
+    <div class="error">{{ message }}</div>
+  }
+
+  <main>
+    @if (data.ready()) {
+      <app-table />
+    } @else {
+      <div class="empty">connecting to the API…</div>
+    }
+  </main>
+
+  <!-- Below the table on purpose: the HUD grows as numbers arrive, and anything
+       above the table would push it down and register as layout shift — poisoning
+       the CLS number the HUD itself reports. -->
+  <app-hud />
+</div>

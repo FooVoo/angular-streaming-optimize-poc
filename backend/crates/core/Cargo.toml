@@ -1,0 +1,10 @@
+[package]
+name = "poc-core"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+rayon.workspace = true
+serde.workspace = true
+png = "0.18"
